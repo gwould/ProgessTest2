@@ -1,0 +1,3116 @@
+{
+  "_type": "Project",
+  "_id": "AAAAAAGP+h6SjaM2Hec=",
+  "name": "Hotel Booking System",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "AAAAAAGP+qBWK6M3Z8Y=",
+      "name": "Model",
+      "_parent": {
+        "$ref": "AAAAAAGP+h6SjaM2Hec="
+      },
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "AAAAAAGP+qBtyKM79qY=",
+          "name": "Hotel Booking System Diagram",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "defaultDiagram": true,
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "BookingController_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "BookingController_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "BookingController_NameView",
+                  "_parent": {
+                    "$ref": "BookingController_View"
+                  },
+                  "model": {
+                    "$ref": "BookingController_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "BookingController_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "BookingController_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 40,
+                      "top": 35,
+                      "width": 200,
+                      "height": 13,
+                      "text": "«Controller»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "BookingController_NameLabel",
+                      "_parent": {
+                        "$ref": "BookingController_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 40,
+                      "top": 50,
+                      "width": 200,
+                      "height": 13,
+                      "text": "BookingController"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 30,
+                  "width": 200,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "BookingController_AttributeView",
+                  "_parent": {
+                    "$ref": "BookingController_View"
+                  },
+                  "model": {
+                    "$ref": "BookingController_ID"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 68,
+                  "width": 200,
+                  "height": 10
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "BookingController_OperationView",
+                  "_parent": {
+                    "$ref": "BookingController_View"
+                  },
+                  "model": {
+                    "$ref": "BookingController_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "BookingController_Op1View",
+                      "_parent": {
+                        "$ref": "BookingController_OperationView"
+                      },
+                      "model": {
+                        "$ref": "BookingController_makeReservation"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 83,
+                      "width": 190,
+                      "height": 13,
+                      "text": "+makeReservation(...): Booking"
+                    },
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "BookingController_Op2View",
+                      "_parent": {
+                        "$ref": "BookingController_OperationView"
+                      },
+                      "model": {
+                        "$ref": "BookingController_cancelReservation"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 98,
+                      "width": 190,
+                      "height": 13,
+                      "text": "+cancelReservation(id): boolean"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 78,
+                  "width": 200,
+                  "height": 38
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 40,
+              "top": 30,
+              "width": 200,
+              "height": 86,
+              "nameCompartment": {
+                "$ref": "BookingController_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "BookingController_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "BookingController_OperationView"
+              }
+            },
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "IBookingService_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "IBookingService_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "IBookingService_NameView",
+                  "_parent": {
+                    "$ref": "IBookingService_View"
+                  },
+                  "model": {
+                    "$ref": "IBookingService_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "IBookingService_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "IBookingService_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 300,
+                      "top": 35,
+                      "width": 180,
+                      "height": 13,
+                      "text": "«interface»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "IBookingService_NameLabel",
+                      "_parent": {
+                        "$ref": "IBookingService_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 300,
+                      "top": 50,
+                      "width": 180,
+                      "height": 13,
+                      "text": "IBookingService"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 300,
+                  "top": 30,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "IBookingService_AttributeView",
+                  "_parent": {
+                    "$ref": "IBookingService_View"
+                  },
+                  "model": {
+                    "$ref": "IBookingService_ID"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 300,
+                  "top": 68,
+                  "width": 180,
+                  "height": 10
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "IBookingService_OperationView",
+                  "_parent": {
+                    "$ref": "IBookingService_View"
+                  },
+                  "model": {
+                    "$ref": "IBookingService_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "IBookingService_Op1View",
+                      "_parent": {
+                        "$ref": "IBookingService_OperationView"
+                      },
+                      "model": {
+                        "$ref": "IBookingService_checkAvailability"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 83,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+checkAvailability(): boolean"
+                    },
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "IBookingService_Op2View",
+                      "_parent": {
+                        "$ref": "IBookingService_OperationView"
+                      },
+                      "model": {
+                        "$ref": "IBookingService_calculateTotal"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 98,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+calculateTotal(): decimal"
+                    },
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "IBookingService_Op3View",
+                      "_parent": {
+                        "$ref": "IBookingService_OperationView"
+                      },
+                      "model": {
+                        "$ref": "IBookingService_applyDiscount"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 113,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+applyDiscount(): decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 300,
+                  "top": 78,
+                  "width": 180,
+                  "height": 53
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 300,
+              "top": 30,
+              "width": 180,
+              "height": 101,
+              "nameCompartment": {
+                "$ref": "IBookingService_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "IBookingService_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "IBookingService_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "BookingService_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "BookingService_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "BookingService_NameView",
+                  "_parent": {
+                    "$ref": "BookingService_View"
+                  },
+                  "model": {
+                    "$ref": "BookingService_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "BookingService_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "BookingService_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 300,
+                      "top": 175,
+                      "width": 200,
+                      "height": 13,
+                      "text": "«Service»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "BookingService_NameLabel",
+                      "_parent": {
+                        "$ref": "BookingService_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 300,
+                      "top": 190,
+                      "width": 200,
+                      "height": 13,
+                      "text": "BookingService"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 300,
+                  "top": 170,
+                  "width": 200,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "BookingService_AttributeView",
+                  "_parent": {
+                    "$ref": "BookingService_View"
+                  },
+                  "model": {
+                    "$ref": "BookingService_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "BookingService_Attr1View",
+                      "_parent": {
+                        "$ref": "BookingService_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "BookingService_repository"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 213,
+                      "width": 190,
+                      "height": 13,
+                      "text": "-repository: IBookingRepository"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "BookingService_Attr2View",
+                      "_parent": {
+                        "$ref": "BookingService_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "BookingService_discountRates"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 228,
+                      "width": 190,
+                      "height": 13,
+                      "text": "-discountRates: Map<>"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "BookingService_Attr3View",
+                      "_parent": {
+                        "$ref": "BookingService_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "BookingService_taxRate"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 243,
+                      "width": 190,
+                      "height": 13,
+                      "text": "-taxRate: decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 300,
+                  "top": 208,
+                  "width": 200,
+                  "height": 53
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "BookingService_OperationView",
+                  "_parent": {
+                    "$ref": "BookingService_View"
+                  },
+                  "model": {
+                    "$ref": "BookingService_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "BookingService_Op1View",
+                      "_parent": {
+                        "$ref": "BookingService_OperationView"
+                      },
+                      "model": {
+                        "$ref": "BookingService_checkAvailability"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 266,
+                      "width": 190,
+                      "height": 13,
+                      "text": "+checkAvailability(): boolean"
+                    },
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "BookingService_Op2View",
+                      "_parent": {
+                        "$ref": "BookingService_OperationView"
+                      },
+                      "model": {
+                        "$ref": "BookingService_calculateTotal"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 305,
+                      "top": 281,
+                      "width": 190,
+                      "height": 13,
+                      "text": "+calculateTotal(): decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 300,
+                  "top": 261,
+                  "width": 200,
+                  "height": 38
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 300,
+              "top": 170,
+              "width": 200,
+              "height": 129,
+              "nameCompartment": {
+                "$ref": "BookingService_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "BookingService_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "BookingService_OperationView"
+              }
+            },
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "IBookingRepository_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "IBookingRepository_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "IBookingRepository_NameView",
+                  "_parent": {
+                    "$ref": "IBookingRepository_View"
+                  },
+                  "model": {
+                    "$ref": "IBookingRepository_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "IBookingRepository_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "IBookingRepository_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 560,
+                      "top": 175,
+                      "width": 180,
+                      "height": 13,
+                      "text": "«interface»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "IBookingRepository_NameLabel",
+                      "_parent": {
+                        "$ref": "IBookingRepository_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 560,
+                      "top": 190,
+                      "width": 180,
+                      "height": 13,
+                      "text": "IBookingRepository"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 560,
+                  "top": 170,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "IBookingRepository_AttributeView",
+                  "_parent": {
+                    "$ref": "IBookingRepository_View"
+                  },
+                  "model": {
+                    "$ref": "IBookingRepository_ID"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 560,
+                  "top": 208,
+                  "width": 180,
+                  "height": 10
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "IBookingRepository_OperationView",
+                  "_parent": {
+                    "$ref": "IBookingRepository_View"
+                  },
+                  "model": {
+                    "$ref": "IBookingRepository_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "IBookingRepository_Op1View",
+                      "_parent": {
+                        "$ref": "IBookingRepository_OperationView"
+                      },
+                      "model": {
+                        "$ref": "IBookingRepository_save"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 565,
+                      "top": 223,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+save(booking): void"
+                    },
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "IBookingRepository_Op2View",
+                      "_parent": {
+                        "$ref": "IBookingRepository_OperationView"
+                      },
+                      "model": {
+                        "$ref": "IBookingRepository_findById"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 565,
+                      "top": 238,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+findById(id): Booking"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 560,
+                  "top": 218,
+                  "width": 180,
+                  "height": 38
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 560,
+              "top": 170,
+              "width": 180,
+              "height": 86,
+              "nameCompartment": {
+                "$ref": "IBookingRepository_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "IBookingRepository_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "IBookingRepository_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "Hotel_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Hotel_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "Hotel_NameView",
+                  "_parent": {
+                    "$ref": "Hotel_View"
+                  },
+                  "model": {
+                    "$ref": "Hotel_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "Hotel_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "Hotel_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 40,
+                      "top": 350,
+                      "width": 180,
+                      "height": 13,
+                      "text": "«Entity»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "Hotel_NameLabel",
+                      "_parent": {
+                        "$ref": "Hotel_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 40,
+                      "top": 365,
+                      "width": 180,
+                      "height": 13,
+                      "text": "Hotel"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 345,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "Hotel_AttributeView",
+                  "_parent": {
+                    "$ref": "Hotel_View"
+                  },
+                  "model": {
+                    "$ref": "Hotel_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Hotel_Attr1View",
+                      "_parent": {
+                        "$ref": "Hotel_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Hotel_hotelId"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 388,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-hotelId: int"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Hotel_Attr2View",
+                      "_parent": {
+                        "$ref": "Hotel_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Hotel_name"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 403,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-name: string"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Hotel_Attr3View",
+                      "_parent": {
+                        "$ref": "Hotel_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Hotel_address"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 418,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-address: string"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 383,
+                  "width": 180,
+                  "height": 53
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "Hotel_OperationView",
+                  "_parent": {
+                    "$ref": "Hotel_View"
+                  },
+                  "model": {
+                    "$ref": "Hotel_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "Hotel_Op1View",
+                      "_parent": {
+                        "$ref": "Hotel_OperationView"
+                      },
+                      "model": {
+                        "$ref": "Hotel_addRoom"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 441,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+addRoom(room): void"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 436,
+                  "width": 180,
+                  "height": 23
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 40,
+              "top": 345,
+              "width": 180,
+              "height": 114,
+              "nameCompartment": {
+                "$ref": "Hotel_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "Hotel_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "Hotel_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "Room_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Room_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "Room_NameView",
+                  "_parent": {
+                    "$ref": "Room_View"
+                  },
+                  "model": {
+                    "$ref": "Room_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "Room_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "Room_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 280,
+                      "top": 350,
+                      "width": 180,
+                      "height": 13,
+                      "text": "«Entity»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "Room_NameLabel",
+                      "_parent": {
+                        "$ref": "Room_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 280,
+                      "top": 365,
+                      "width": 180,
+                      "height": 13,
+                      "text": "Room"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 345,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "Room_AttributeView",
+                  "_parent": {
+                    "$ref": "Room_View"
+                  },
+                  "model": {
+                    "$ref": "Room_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Room_Attr1View",
+                      "_parent": {
+                        "$ref": "Room_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Room_roomId"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 388,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-roomId: int"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Room_Attr2View",
+                      "_parent": {
+                        "$ref": "Room_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Room_roomNumber"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 403,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-roomNumber: string"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Room_Attr3View",
+                      "_parent": {
+                        "$ref": "Room_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Room_pricePerNight"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 418,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-pricePerNight: decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 383,
+                  "width": 180,
+                  "height": 53
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "Room_OperationView",
+                  "_parent": {
+                    "$ref": "Room_View"
+                  },
+                  "model": {
+                    "$ref": "Room_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "Room_Op1View",
+                      "_parent": {
+                        "$ref": "Room_OperationView"
+                      },
+                      "model": {
+                        "$ref": "Room_checkStatus"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 441,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+checkStatus(): boolean"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 436,
+                  "width": 180,
+                  "height": 23
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 280,
+              "top": 345,
+              "width": 180,
+              "height": 114,
+              "nameCompartment": {
+                "$ref": "Room_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "Room_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "Room_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "RoomType_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "RoomType_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "RoomType_NameView",
+                  "_parent": {
+                    "$ref": "RoomType_View"
+                  },
+                  "model": {
+                    "$ref": "RoomType_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "RoomType_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "RoomType_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 520,
+                      "top": 350,
+                      "width": 160,
+                      "height": 13,
+                      "text": "«Entity»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "RoomType_NameLabel",
+                      "_parent": {
+                        "$ref": "RoomType_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 520,
+                      "top": 365,
+                      "width": 160,
+                      "height": 13,
+                      "text": "RoomType"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 520,
+                  "top": 345,
+                  "width": 160,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "RoomType_AttributeView",
+                  "_parent": {
+                    "$ref": "RoomType_View"
+                  },
+                  "model": {
+                    "$ref": "RoomType_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "RoomType_Attr1View",
+                      "_parent": {
+                        "$ref": "RoomType_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "RoomType_typeId"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 525,
+                      "top": 388,
+                      "width": 150,
+                      "height": 13,
+                      "text": "-typeId: int"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "RoomType_Attr2View",
+                      "_parent": {
+                        "$ref": "RoomType_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "RoomType_typeName"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 525,
+                      "top": 403,
+                      "width": 150,
+                      "height": 13,
+                      "text": "-typeName: string"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "RoomType_Attr3View",
+                      "_parent": {
+                        "$ref": "RoomType_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "RoomType_basePrice"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 525,
+                      "top": 418,
+                      "width": 150,
+                      "height": 13,
+                      "text": "-basePrice: decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 520,
+                  "top": 383,
+                  "width": 160,
+                  "height": 53
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "RoomType_OperationView",
+                  "_parent": {
+                    "$ref": "RoomType_View"
+                  },
+                  "model": {
+                    "$ref": "RoomType_ID"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 520,
+                  "top": 436,
+                  "width": 160,
+                  "height": 10
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 520,
+              "top": 345,
+              "width": 160,
+              "height": 101,
+              "nameCompartment": {
+                "$ref": "RoomType_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "RoomType_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "RoomType_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "Guest_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Guest_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "Guest_NameView",
+                  "_parent": {
+                    "$ref": "Guest_View"
+                  },
+                  "model": {
+                    "$ref": "Guest_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "Guest_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "Guest_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 40,
+                      "top": 520,
+                      "width": 180,
+                      "height": 13,
+                      "text": "«Entity»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "Guest_NameLabel",
+                      "_parent": {
+                        "$ref": "Guest_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 40,
+                      "top": 535,
+                      "width": 180,
+                      "height": 13,
+                      "text": "Guest"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 515,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "Guest_AttributeView",
+                  "_parent": {
+                    "$ref": "Guest_View"
+                  },
+                  "model": {
+                    "$ref": "Guest_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Guest_Attr1View",
+                      "_parent": {
+                        "$ref": "Guest_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Guest_guestId"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 558,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-guestId: int"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Guest_Attr2View",
+                      "_parent": {
+                        "$ref": "Guest_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Guest_fullName"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 573,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-fullName: string"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Guest_Attr3View",
+                      "_parent": {
+                        "$ref": "Guest_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Guest_email"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 588,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-email: string"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 553,
+                  "width": 180,
+                  "height": 53
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "Guest_OperationView",
+                  "_parent": {
+                    "$ref": "Guest_View"
+                  },
+                  "model": {
+                    "$ref": "Guest_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "Guest_Op1View",
+                      "_parent": {
+                        "$ref": "Guest_OperationView"
+                      },
+                      "model": {
+                        "$ref": "Guest_updateProfile"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 45,
+                      "top": 611,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+updateProfile(): void"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 40,
+                  "top": 606,
+                  "width": 180,
+                  "height": 23
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 40,
+              "top": 515,
+              "width": 180,
+              "height": 114,
+              "nameCompartment": {
+                "$ref": "Guest_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "Guest_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "Guest_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "Booking_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Booking_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "Booking_NameView",
+                  "_parent": {
+                    "$ref": "Booking_View"
+                  },
+                  "model": {
+                    "$ref": "Booking_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "Booking_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "Booking_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 280,
+                      "top": 520,
+                      "width": 180,
+                      "height": 13,
+                      "text": "«Entity»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "Booking_NameLabel",
+                      "_parent": {
+                        "$ref": "Booking_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 280,
+                      "top": 535,
+                      "width": 180,
+                      "height": 13,
+                      "text": "Booking"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 515,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "Booking_AttributeView",
+                  "_parent": {
+                    "$ref": "Booking_View"
+                  },
+                  "model": {
+                    "$ref": "Booking_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Booking_Attr1View",
+                      "_parent": {
+                        "$ref": "Booking_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Booking_bookingId"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 558,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-bookingId: int"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Booking_Attr2View",
+                      "_parent": {
+                        "$ref": "Booking_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Booking_checkInDate"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 573,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-checkInDate: DateTime"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Booking_Attr3View",
+                      "_parent": {
+                        "$ref": "Booking_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Booking_totalAmount"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 588,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-totalAmount: decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 553,
+                  "width": 180,
+                  "height": 53
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "Booking_OperationView",
+                  "_parent": {
+                    "$ref": "Booking_View"
+                  },
+                  "model": {
+                    "$ref": "Booking_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "Booking_Op1View",
+                      "_parent": {
+                        "$ref": "Booking_OperationView"
+                      },
+                      "model": {
+                        "$ref": "Booking_calculateDuration"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 611,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+calculateDuration(): int"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 606,
+                  "width": 180,
+                  "height": 23
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 280,
+              "top": 515,
+              "width": 180,
+              "height": 114,
+              "nameCompartment": {
+                "$ref": "Booking_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "Booking_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "Booking_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "Invoice_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Invoice_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "Invoice_NameView",
+                  "_parent": {
+                    "$ref": "Invoice_View"
+                  },
+                  "model": {
+                    "$ref": "Invoice_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "Invoice_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "Invoice_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 520,
+                      "top": 520,
+                      "width": 160,
+                      "height": 13,
+                      "text": "«Entity»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "Invoice_NameLabel",
+                      "_parent": {
+                        "$ref": "Invoice_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 520,
+                      "top": 535,
+                      "width": 160,
+                      "height": 13,
+                      "text": "Invoice"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 520,
+                  "top": 515,
+                  "width": 160,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "Invoice_AttributeView",
+                  "_parent": {
+                    "$ref": "Invoice_View"
+                  },
+                  "model": {
+                    "$ref": "Invoice_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Invoice_Attr1View",
+                      "_parent": {
+                        "$ref": "Invoice_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Invoice_invoiceId"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 525,
+                      "top": 558,
+                      "width": 150,
+                      "height": 13,
+                      "text": "-invoiceId: int"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Invoice_Attr2View",
+                      "_parent": {
+                        "$ref": "Invoice_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Invoice_totalAmount"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 525,
+                      "top": 573,
+                      "width": 150,
+                      "height": 13,
+                      "text": "-totalAmount: decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 520,
+                  "top": 553,
+                  "width": 160,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "Invoice_OperationView",
+                  "_parent": {
+                    "$ref": "Invoice_View"
+                  },
+                  "model": {
+                    "$ref": "Invoice_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "Invoice_Op1View",
+                      "_parent": {
+                        "$ref": "Invoice_OperationView"
+                      },
+                      "model": {
+                        "$ref": "Invoice_generatePDF"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 525,
+                      "top": 596,
+                      "width": 150,
+                      "height": 13,
+                      "text": "+generatePDF(): byte[]"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 520,
+                  "top": 591,
+                  "width": 160,
+                  "height": 23
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 520,
+              "top": 515,
+              "width": 160,
+              "height": 99,
+              "nameCompartment": {
+                "$ref": "Invoice_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "Invoice_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "Invoice_OperationView"
+              }
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "Payment_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Payment_ID"
+              },
+              "subViews": [
+                {
+                  "_type": "UMLNameCompartmentView",
+                  "_id": "Payment_NameView",
+                  "_parent": {
+                    "$ref": "Payment_View"
+                  },
+                  "model": {
+                    "$ref": "Payment_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "LabelView",
+                      "_id": "Payment_StereotypeLabel",
+                      "_parent": {
+                        "$ref": "Payment_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 280,
+                      "top": 680,
+                      "width": 180,
+                      "height": 13,
+                      "text": "«Entity»"
+                    },
+                    {
+                      "_type": "LabelView",
+                      "_id": "Payment_NameLabel",
+                      "_parent": {
+                        "$ref": "Payment_NameView"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;1",
+                      "left": 280,
+                      "top": 695,
+                      "width": 180,
+                      "height": 13,
+                      "text": "Payment"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 675,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLAttributeCompartmentView",
+                  "_id": "Payment_AttributeView",
+                  "_parent": {
+                    "$ref": "Payment_View"
+                  },
+                  "model": {
+                    "$ref": "Payment_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Payment_Attr1View",
+                      "_parent": {
+                        "$ref": "Payment_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Payment_paymentId"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 718,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-paymentId: int"
+                    },
+                    {
+                      "_type": "UMLAttributeView",
+                      "_id": "Payment_Attr2View",
+                      "_parent": {
+                        "$ref": "Payment_AttributeView"
+                      },
+                      "model": {
+                        "$ref": "Payment_amount"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 733,
+                      "width": 170,
+                      "height": 13,
+                      "text": "-amount: decimal"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 713,
+                  "width": 180,
+                  "height": 38
+                },
+                {
+                  "_type": "UMLOperationCompartmentView",
+                  "_id": "Payment_OperationView",
+                  "_parent": {
+                    "$ref": "Payment_View"
+                  },
+                  "model": {
+                    "$ref": "Payment_ID"
+                  },
+                  "subViews": [
+                    {
+                      "_type": "UMLOperationView",
+                      "_id": "Payment_Op1View",
+                      "_parent": {
+                        "$ref": "Payment_OperationView"
+                      },
+                      "model": {
+                        "$ref": "Payment_processPayment"
+                      },
+                      "visible": true,
+                      "font": "Arial;13;0",
+                      "left": 285,
+                      "top": 756,
+                      "width": 170,
+                      "height": 13,
+                      "text": "+processPayment(): boolean"
+                    }
+                  ],
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 280,
+                  "top": 751,
+                  "width": 180,
+                  "height": 23
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "containerChangeable": true,
+              "left": 280,
+              "top": 675,
+              "width": 180,
+              "height": 99,
+              "nameCompartment": {
+                "$ref": "Payment_NameView"
+              },
+              "attributeCompartment": {
+                "$ref": "Payment_AttributeView"
+              },
+              "operationCompartment": {
+                "$ref": "Payment_OperationView"
+              }
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "Dependency_Controller_IService_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Dependency_Controller_IService"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Dependency_Controller_IService_Label",
+                  "_parent": {
+                    "$ref": "Dependency_Controller_IService_View"
+                  },
+                  "model": {
+                    "$ref": "Dependency_Controller_IService"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 250,
+                  "top": 60,
+                  "width": 32,
+                  "height": 13,
+                  "text": "«uses»"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Dependency_Controller_IService_Stereotype",
+                  "_parent": {
+                    "$ref": "Dependency_Controller_IService_View"
+                  },
+                  "model": {
+                    "$ref": "Dependency_Controller_IService"
+                  },
+                  "visible": false,
+                  "font": "Arial;13;0"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 1,
+              "points": "240:80;300:80",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Dependency_Controller_IService_Label"
+              },
+              "stereotypeLabel": {
+                "$ref": "Dependency_Controller_IService_Stereotype"
+              },
+              "tail": {
+                "$ref": "BookingController_View"
+              },
+              "head": {
+                "$ref": "IBookingService_View"
+              }
+            },
+            {
+              "_type": "UMLInterfaceRealizationView",
+              "_id": "Realization_Service_IService_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Realization_Service_IService"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Realization_Service_IService_Label",
+                  "_parent": {
+                    "$ref": "Realization_Service_IService_View"
+                  },
+                  "model": {
+                    "$ref": "Realization_Service_IService"
+                  },
+                  "visible": false,
+                  "font": "Arial;13;0"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 1,
+              "points": "400:170;400:130",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Realization_Service_IService_Label"
+              },
+              "tail": {
+                "$ref": "BookingService_View"
+              },
+              "head": {
+                "$ref": "IBookingService_View"
+              }
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "Dependency_Service_IRepository_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Dependency_Service_IRepository"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Dependency_Service_IRepository_Label",
+                  "_parent": {
+                    "$ref": "Dependency_Service_IRepository_View"
+                  },
+                  "model": {
+                    "$ref": "Dependency_Service_IRepository"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 515,
+                  "top": 220,
+                  "width": 32,
+                  "height": 13,
+                  "text": "«uses»"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 1,
+              "points": "500:235;560:235",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Dependency_Service_IRepository_Label"
+              },
+              "tail": {
+                "$ref": "BookingService_View"
+              },
+              "head": {
+                "$ref": "IBookingRepository_View"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "Composition_Hotel_Room_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Composition_Hotel_Room"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Composition_Hotel_Room_Label",
+                  "_parent": {
+                    "$ref": "Composition_Hotel_Room_View"
+                  },
+                  "model": {
+                    "$ref": "Composition_Hotel_Room"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 230,
+                  "top": 385,
+                  "width": 40,
+                  "height": 13,
+                  "text": "contains"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Composition_Hotel_Room_End1",
+                  "_parent": {
+                    "$ref": "Composition_Hotel_Room_View"
+                  },
+                  "model": {
+                    "$ref": "Composition_Hotel_Room_end1"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 225,
+                  "top": 385,
+                  "width": 10,
+                  "height": 13,
+                  "text": "1"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Composition_Hotel_Room_End2",
+                  "_parent": {
+                    "$ref": "Composition_Hotel_Room_View"
+                  },
+                  "model": {
+                    "$ref": "Composition_Hotel_Room_end2"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 255,
+                  "top": 385,
+                  "width": 21,
+                  "height": 13,
+                  "text": "0..*"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 0,
+              "points": "220:402;280:402",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Composition_Hotel_Room_Label"
+              },
+              "tailEndLabel": {
+                "$ref": "Composition_Hotel_Room_End1"
+              },
+              "headEndLabel": {
+                "$ref": "Composition_Hotel_Room_End2"
+              },
+              "tail": {
+                "$ref": "Hotel_View"
+              },
+              "head": {
+                "$ref": "Room_View"
+              },
+              "end1": {
+                "$ref": "Composition_Hotel_Room_end1"
+              },
+              "end2": {
+                "$ref": "Composition_Hotel_Room_end2"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "Aggregation_Room_RoomType_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Aggregation_Room_RoomType"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Aggregation_Room_RoomType_Label",
+                  "_parent": {
+                    "$ref": "Aggregation_Room_RoomType_View"
+                  },
+                  "model": {
+                    "$ref": "Aggregation_Room_RoomType"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 475,
+                  "top": 385,
+                  "width": 20,
+                  "height": 13,
+                  "text": "has"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Aggregation_Room_RoomType_End1",
+                  "_parent": {
+                    "$ref": "Aggregation_Room_RoomType_View"
+                  },
+                  "model": {
+                    "$ref": "Aggregation_Room_RoomType_end1"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 465,
+                  "top": 385,
+                  "width": 21,
+                  "height": 13,
+                  "text": "0..*"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Aggregation_Room_RoomType_End2",
+                  "_parent": {
+                    "$ref": "Aggregation_Room_RoomType_View"
+                  },
+                  "model": {
+                    "$ref": "Aggregation_Room_RoomType_end2"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 505,
+                  "top": 385,
+                  "width": 10,
+                  "height": 13,
+                  "text": "1"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 0,
+              "points": "460:402;520:402",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Aggregation_Room_RoomType_Label"
+              },
+              "tailEndLabel": {
+                "$ref": "Aggregation_Room_RoomType_End1"
+              },
+              "headEndLabel": {
+                "$ref": "Aggregation_Room_RoomType_End2"
+              },
+              "tail": {
+                "$ref": "Room_View"
+              },
+              "head": {
+                "$ref": "RoomType_View"
+              },
+              "end1": {
+                "$ref": "Aggregation_Room_RoomType_end1"
+              },
+              "end2": {
+                "$ref": "Aggregation_Room_RoomType_end2"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "Association_Guest_Booking_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Association_Guest_Booking"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Association_Guest_Booking_Label",
+                  "_parent": {
+                    "$ref": "Association_Guest_Booking_View"
+                  },
+                  "model": {
+                    "$ref": "Association_Guest_Booking"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 230,
+                  "top": 555,
+                  "width": 34,
+                  "height": 13,
+                  "text": "makes"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Association_Guest_Booking_End1",
+                  "_parent": {
+                    "$ref": "Association_Guest_Booking_View"
+                  },
+                  "model": {
+                    "$ref": "Association_Guest_Booking_end1"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 225,
+                  "top": 555,
+                  "width": 10,
+                  "height": 13,
+                  "text": "1"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Association_Guest_Booking_End2",
+                  "_parent": {
+                    "$ref": "Association_Guest_Booking_View"
+                  },
+                  "model": {
+                    "$ref": "Association_Guest_Booking_end2"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 255,
+                  "top": 555,
+                  "width": 21,
+                  "height": 13,
+                  "text": "0..*"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 0,
+              "points": "220:572;280:572",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Association_Guest_Booking_Label"
+              },
+              "tailEndLabel": {
+                "$ref": "Association_Guest_Booking_End1"
+              },
+              "headEndLabel": {
+                "$ref": "Association_Guest_Booking_End2"
+              },
+              "tail": {
+                "$ref": "Guest_View"
+              },
+              "head": {
+                "$ref": "Booking_View"
+              },
+              "end1": {
+                "$ref": "Association_Guest_Booking_end1"
+              },
+              "end2": {
+                "$ref": "Association_Guest_Booking_end2"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "Aggregation_Booking_Invoice_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Aggregation_Booking_Invoice"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Aggregation_Booking_Invoice_Label",
+                  "_parent": {
+                    "$ref": "Aggregation_Booking_Invoice_View"
+                  },
+                  "model": {
+                    "$ref": "Aggregation_Booking_Invoice"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 470,
+                  "top": 555,
+                  "width": 51,
+                  "height": 13,
+                  "text": "generates"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Aggregation_Booking_Invoice_End1",
+                  "_parent": {
+                    "$ref": "Aggregation_Booking_Invoice_View"
+                  },
+                  "model": {
+                    "$ref": "Aggregation_Booking_Invoice_end1"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 465,
+                  "top": 555,
+                  "width": 10,
+                  "height": 13,
+                  "text": "1"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Aggregation_Booking_Invoice_End2",
+                  "_parent": {
+                    "$ref": "Aggregation_Booking_Invoice_View"
+                  },
+                  "model": {
+                    "$ref": "Aggregation_Booking_Invoice_end2"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 495,
+                  "top": 555,
+                  "width": 21,
+                  "height": 13,
+                  "text": "1..*"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 0,
+              "points": "460:572;520:572",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Aggregation_Booking_Invoice_Label"
+              },
+              "tailEndLabel": {
+                "$ref": "Aggregation_Booking_Invoice_End1"
+              },
+              "headEndLabel": {
+                "$ref": "Aggregation_Booking_Invoice_End2"
+              },
+              "tail": {
+                "$ref": "Booking_View"
+              },
+              "head": {
+                "$ref": "Invoice_View"
+              },
+              "end1": {
+                "$ref": "Aggregation_Booking_Invoice_end1"
+              },
+              "end2": {
+                "$ref": "Aggregation_Booking_Invoice_end2"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "Composition_Booking_Payment_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Composition_Booking_Payment"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Composition_Booking_Payment_Label",
+                  "_parent": {
+                    "$ref": "Composition_Booking_Payment_View"
+                  },
+                  "model": {
+                    "$ref": "Composition_Booking_Payment"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 380,
+                  "top": 640,
+                  "width": 20,
+                  "height": 13,
+                  "text": "has"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Composition_Booking_Payment_End1",
+                  "_parent": {
+                    "$ref": "Composition_Booking_Payment_View"
+                  },
+                  "model": {
+                    "$ref": "Composition_Booking_Payment_end1"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 375,
+                  "top": 635,
+                  "width": 10,
+                  "height": 13,
+                  "text": "1"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Composition_Booking_Payment_End2",
+                  "_parent": {
+                    "$ref": "Composition_Booking_Payment_View"
+                  },
+                  "model": {
+                    "$ref": "Composition_Booking_Payment_end2"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 375,
+                  "top": 660,
+                  "width": 21,
+                  "height": 13,
+                  "text": "0..*"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 0,
+              "points": "370:629;370:675",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Composition_Booking_Payment_Label"
+              },
+              "tailEndLabel": {
+                "$ref": "Composition_Booking_Payment_End1"
+              },
+              "headEndLabel": {
+                "$ref": "Composition_Booking_Payment_End2"
+              },
+              "tail": {
+                "$ref": "Booking_View"
+              },
+              "head": {
+                "$ref": "Payment_View"
+              },
+              "end1": {
+                "$ref": "Composition_Booking_Payment_end1"
+              },
+              "end2": {
+                "$ref": "Composition_Booking_Payment_end2"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "BookingController_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "BookingController",
+          "stereotype": "Controller",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "BookingController_makeReservation",
+              "_parent": {
+                "$ref": "BookingController_ID"
+              },
+              "name": "makeReservation"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "BookingController_cancelReservation",
+              "_parent": {
+                "$ref": "BookingController_ID"
+              },
+              "name": "cancelReservation"
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "IBookingService_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "IBookingService",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingService_checkAvailability",
+              "_parent": {
+                "$ref": "IBookingService_ID"
+              },
+              "name": "checkAvailability"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingService_calculateTotal",
+              "_parent": {
+                "$ref": "IBookingService_ID"
+              },
+              "name": "calculateTotal"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingService_applyDiscount",
+              "_parent": {
+                "$ref": "IBookingService_ID"
+              },
+              "name": "applyDiscount"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "BookingService_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "BookingService",
+          "stereotype": "Service",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "BookingService_repository",
+              "_parent": {
+                "$ref": "BookingService_ID"
+              },
+              "name": "repository",
+              "visibility": "private",
+              "type": "IBookingRepository"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "BookingService_discountRates",
+              "_parent": {
+                "$ref": "BookingService_ID"
+              },
+              "name": "discountRates",
+              "visibility": "private",
+              "type": "Map"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "BookingService_taxRate",
+              "_parent": {
+                "$ref": "BookingService_ID"
+              },
+              "name": "taxRate",
+              "visibility": "private",
+              "type": "decimal"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "BookingService_checkAvailability",
+              "_parent": {
+                "$ref": "BookingService_ID"
+              },
+              "name": "checkAvailability"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "BookingService_calculateTotal",
+              "_parent": {
+                "$ref": "BookingService_ID"
+              },
+              "name": "calculateTotal"
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "IBookingRepository_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "IBookingRepository",
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingRepository_save",
+              "_parent": {
+                "$ref": "IBookingRepository_ID"
+              },
+              "name": "save"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingRepository_findById",
+              "_parent": {
+                "$ref": "IBookingRepository_ID"
+              },
+              "name": "findById"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "Hotel_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "Hotel",
+          "stereotype": "Entity",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "Hotel_hotelId",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "hotelId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Hotel_name",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "name",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Hotel_address",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "address",
+              "visibility": "private",
+              "type": "string"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "Hotel_addRoom",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "addRoom"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "Room_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "Room",
+          "stereotype": "Entity",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "Room_roomId",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "roomId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Room_roomNumber",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "roomNumber",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Room_pricePerNight",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "pricePerNight",
+              "visibility": "private",
+              "type": "decimal"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "Room_checkStatus",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "checkStatus"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "RoomType_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "RoomType",
+          "stereotype": "Entity",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "RoomType_typeId",
+              "_parent": {
+                "$ref": "RoomType_ID"
+              },
+              "name": "typeId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "RoomType_typeName",
+              "_parent": {
+                "$ref": "RoomType_ID"
+              },
+              "name": "typeName",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "RoomType_basePrice",
+              "_parent": {
+                "$ref": "RoomType_ID"
+              },
+              "name": "basePrice",
+              "visibility": "private",
+              "type": "decimal"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "Guest_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "Guest",
+          "stereotype": "Entity",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "Guest_guestId",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "guestId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Guest_fullName",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "fullName",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Guest_email",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "email",
+              "visibility": "private",
+              "type": "string"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "Guest_updateProfile",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "updateProfile"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "Booking_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "Booking",
+          "stereotype": "Entity",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "Booking_bookingId",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "bookingId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Booking_checkInDate",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "checkInDate",
+              "visibility": "private",
+              "type": "DateTime"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Booking_totalAmount",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "totalAmount",
+              "visibility": "private",
+              "type": "decimal"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "Booking_calculateDuration",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "calculateDuration"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "Invoice_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "Invoice",
+          "stereotype": "Entity",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "Invoice_invoiceId",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "invoiceId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Invoice_totalAmount",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "totalAmount",
+              "visibility": "private",
+              "type": "decimal"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "Invoice_generatePDF",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "generatePDF"
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "Payment_ID",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "Payment",
+          "stereotype": "Entity",
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "Payment_paymentId",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "paymentId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Payment_amount",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "amount",
+              "visibility": "private",
+              "type": "decimal"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "Payment_processPayment",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "processPayment"
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "Dependency_Controller_IService",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "BookingController_ID"
+          },
+          "target": {
+            "$ref": "IBookingService_ID"
+          }
+        },
+        {
+          "_type": "UMLInterfaceRealization",
+          "_id": "Realization_Service_IService",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "source": {
+            "$ref": "BookingService_ID"
+          },
+          "target": {
+            "$ref": "IBookingService_ID"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "Dependency_Service_IRepository",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "BookingService_ID"
+          },
+          "target": {
+            "$ref": "IBookingRepository_ID"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "Composition_Hotel_Room",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "contains",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Composition_Hotel_Room_end1",
+            "_parent": {
+              "$ref": "Composition_Hotel_Room"
+            },
+            "reference": {
+              "$ref": "Hotel_ID"
+            },
+            "multiplicity": "1",
+            "aggregation": "composite"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Composition_Hotel_Room_end2",
+            "_parent": {
+              "$ref": "Composition_Hotel_Room"
+            },
+            "reference": {
+              "$ref": "Room_ID"
+            },
+            "multiplicity": "0..*",
+            "navigable": "navigable"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "Aggregation_Room_RoomType",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "has",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Aggregation_Room_RoomType_end1",
+            "_parent": {
+              "$ref": "Aggregation_Room_RoomType"
+            },
+            "reference": {
+              "$ref": "Room_ID"
+            },
+            "multiplicity": "0..*",
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Aggregation_Room_RoomType_end2",
+            "_parent": {
+              "$ref": "Aggregation_Room_RoomType"
+            },
+            "reference": {
+              "$ref": "RoomType_ID"
+            },
+            "multiplicity": "1",
+            "navigable": "navigable"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "Association_Guest_Booking",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "makes",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Association_Guest_Booking_end1",
+            "_parent": {
+              "$ref": "Association_Guest_Booking"
+            },
+            "reference": {
+              "$ref": "Guest_ID"
+            },
+            "multiplicity": "1"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Association_Guest_Booking_end2",
+            "_parent": {
+              "$ref": "Association_Guest_Booking"
+            },
+            "reference": {
+              "$ref": "Booking_ID"
+            },
+            "multiplicity": "0..*",
+            "navigable": "navigable"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "Aggregation_Booking_Invoice",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "generates",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Aggregation_Booking_Invoice_end1",
+            "_parent": {
+              "$ref": "Aggregation_Booking_Invoice"
+            },
+            "reference": {
+              "$ref": "Booking_ID"
+            },
+            "multiplicity": "1",
+            "aggregation": "shared"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Aggregation_Booking_Invoice_end2",
+            "_parent": {
+              "$ref": "Aggregation_Booking_Invoice"
+            },
+            "reference": {
+              "$ref": "Invoice_ID"
+            },
+            "multiplicity": "1..*",
+            "navigable": "navigable"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "Composition_Booking_Payment",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "has",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Composition_Booking_Payment_end1",
+            "_parent": {
+              "$ref": "Composition_Booking_Payment"
+            },
+            "reference": {
+              "$ref": "Booking_ID"
+            },
+            "multiplicity": "1",
+            "aggregation": "composite"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Composition_Booking_Payment_end2",
+            "_parent": {
+              "$ref": "Composition_Booking_Payment"
+            },
+            "reference": {
+              "$ref": "Payment_ID"
+            },
+            "multiplicity": "0..*",
+            "navigable": "navigable"
+          }
+        }
+      ]
+    }
+  ]
+}

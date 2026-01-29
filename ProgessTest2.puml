@@ -1,0 +1,270 @@
+@startuml Hotel Booking System Class Diagram
+
+' ==================== CONFIGURATION ====================
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor<<Controller>> LightBlue
+    BackgroundColor<<Service>> LightGreen
+    BackgroundColor<<Entity>> Wheat
+    BorderColor Black
+    ArrowColor Black
+}
+
+' ==================== CONTROLLER LAYER ====================
+
+class BookingController <<Controller>> {
+    ' Controller không có attributes trong thiết kế này
+    
+    ' Methods
+    +makeReservation(guestId: int, roomIds: List<int>, checkInDate: DateTime, checkOutDate: DateTime, numberOfGuests: int): Booking
+    +cancelReservation(bookingId: int): boolean
+}
+
+' ==================== SERVICE LAYER ====================
+
+interface IBookingService <<interface>> {
+    +checkAvailability(roomId: int, startDate: DateTime, endDate: DateTime): boolean
+    +calculateTotal(booking: Booking): decimal
+    +applyDiscount(booking: Booking, discountCode: string): decimal
+}
+
+class BookingService <<Service>> {
+    ' Attributes
+    -repository: IBookingRepository
+    -discountRates: Map<string, decimal>
+    -taxRate: decimal
+    
+    ' Methods
+    +checkAvailability(roomId: int, startDate: DateTime, endDate: DateTime): boolean
+    +calculateTotal(booking: Booking): decimal
+    +applyDiscount(booking: Booking, discountCode: string): decimal
+}
+
+' ==================== REPOSITORY LAYER ====================
+
+interface IBookingRepository <<interface>> {
+    +save(booking: Booking): void
+    +findById(bookingId: int): Booking
+    +delete(bookingId: int): void
+    +findByGuestId(guestId: int): List<Booking>
+    +findByRoomId(roomId: int): List<Booking>
+}
+
+' ==================== ENTITY LAYER ====================
+
+class Hotel <<Entity>> {
+    ' Attributes
+    -hotelId: int
+    -name: string
+    -address: string
+    -phone: string
+    -starRating: int
+    -isActive: boolean
+    
+    ' Methods
+    +addRoom(room: Room): void
+    +removeRoom(roomId: int): void
+    +getActiveRooms(): List<Room>
+}
+
+class Room <<Entity>> {
+    ' Attributes
+    -roomId: int
+    -roomNumber: string
+    -floor: int
+    -pricePerNight: decimal
+    -isAvailable: boolean
+    -maxOccupancy: int
+    
+    ' Methods
+    +checkStatus(): boolean
+    +updateAvailability(status: boolean): void
+    +getPrice(): decimal
+}
+
+class RoomType <<Entity>> {
+    ' Attributes
+    -typeId: int
+    -typeName: string
+    -description: string
+    -capacity: int
+    -basePrice: decimal
+    
+    ' Methods
+    +getDescription(): string
+    +updatePrice(newPrice: decimal): void
+}
+
+class Guest <<Entity>> {
+    ' Attributes
+    -guestId: int
+    -fullName: string
+    -email: string
+    -phone: string
+    -membershipLevel: string
+    -isDeleted: boolean
+    
+    ' Methods
+    +updateProfile(data: GuestData): void
+    +getBookingHistory(): List<Booking>
+    +getMembershipDiscount(): decimal
+}
+
+class Booking <<Entity>> {
+    ' Attributes
+    -bookingId: int
+    -guestId: int
+    -checkInDate: DateTime
+    -checkOutDate: DateTime
+    -totalAmount: decimal
+    -status: string
+    -numberOfGuests: int
+    -createdAt: DateTime
+    
+    ' Methods
+    +calculateDuration(): int
+    +updateStatus(newStatus: string): void
+    +getTotalAmount(): decimal
+}
+
+class Invoice <<Entity>> {
+    ' Attributes
+    -invoiceId: int
+    -bookingId: int
+    -invoiceNumber: string
+    -issueDate: DateTime
+    -totalAmount: decimal
+    -taxAmount: decimal
+    -isPaid: boolean
+    
+    ' Methods
+    +generatePDF(): byte[]
+    +sendEmail(email: string): boolean
+    +markAsPaid(): void
+}
+
+class Payment <<Entity>> {
+    ' Attributes
+    -paymentId: int
+    -bookingId: int
+    -amount: decimal
+    -paymentDate: DateTime
+    -paymentMethod: string
+    -transactionId: string
+    -status: string
+    
+    ' Methods
+    +processPayment(): boolean
+    +refund(): boolean
+    +getReceipt(): string
+}
+
+' ==================== RELATIONSHIPS ====================
+
+' Controller uses Service Interface (Dependency)
+BookingController ..> IBookingService : <<uses>>
+
+' Service implements Interface (Realization)
+BookingService ..|> IBookingService
+
+' Service depends on Repository Interface (Dependency)
+BookingService ..> IBookingRepository : <<uses>>
+
+' Service depends on Entities for calculations (Dependency)
+BookingService ..> Booking : <<uses>>
+BookingService ..> Room : <<uses>>
+BookingService ..> RoomType : <<uses>>
+
+' Hotel contains Rooms (Composition - strong ownership)
+' If Hotel is deleted, all Rooms are deleted
+Hotel "1" *-- "0..*" Room : contains >
+
+' Room has a RoomType (Aggregation - weak ownership)
+' Multiple Rooms can have the same RoomType
+Room "0..*" o-- "1" RoomType : has >
+
+' Guest makes Bookings (Association)
+' Guest can exist without Booking, Booking can be deleted independently
+Guest "1" -- "0..*" Booking : makes >
+
+' Booking includes Rooms (Many-to-Many Association)
+' One Booking can have multiple Rooms, one Room can have multiple Bookings over time
+Booking "1..*" -- "1..*" Room : includes >
+
+' Booking has Invoices (Aggregation - Invoice survives Booking deletion)
+' Invoice must be kept for tax purposes even if Booking is deleted
+Booking "1" o-- "1..*" Invoice : generates >
+
+' Booking has Payments (Composition - Payment dies with Booking)
+' Payment has no meaning without Booking
+Booking "1" *-- "0..*" Payment : has >
+
+' ==================== NOTES ====================
+
+note right of Hotel
+  <b>Composition with Room</b>
+  When Hotel is deleted,
+  all Rooms are also deleted
+  (Cascade delete)
+end note
+
+note right of Room
+  <b>Aggregation with RoomType</b>
+  Multiple Rooms can share
+  the same RoomType.
+  RoomType exists independently.
+end note
+
+note left of Guest
+  <b>Soft Delete Support</b>
+  isDeleted flag allows
+  keeping Guest data while
+  marking as deleted for GDPR
+end note
+
+note bottom of Booking
+  <b>Status Values:</b>
+  - Pending
+  - Confirmed
+  - CheckedIn
+  - CheckedOut
+  - Cancelled
+end note
+
+note right of Invoice
+  <b>Aggregation with Booking</b>
+  Invoice must survive
+  Booking deletion for
+  tax and accounting purposes
+end note
+
+note right of Payment
+  <b>Composition with Booking</b>
+  Payment is deleted when
+  Booking is deleted as it
+  has no independent value
+end note
+
+' ==================== LEGEND ====================
+
+legend right
+  <b>Relationship Types Used:</b>
+  <b>*--</b> : Composition (strong ownership)
+  <b>o--</b> : Aggregation (weak ownership)
+  <b>--</b> : Association
+  <b>..></b> : Dependency
+  <b>..|></b> : Realization (implements)
+  
+  <b>Multiplicity:</b>
+  <b>1</b> : exactly one
+  <b>0..*</b> : zero or more
+  <b>1..*</b> : one or more
+  
+  <b>Architecture Layers:</b>
+  - Controller (Blue)
+  - Service (Green)
+  - Entity (Wheat/Tan)
+endlegend
+
+@enduml
