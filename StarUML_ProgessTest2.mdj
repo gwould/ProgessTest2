@@ -2434,6 +2434,224 @@
               "end2": {
                 "$ref": "Composition_Booking_Payment_end2"
               }
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "Dependency_Service_Booking_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Dependency_Service_Booking"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Dependency_Service_Booking_Label",
+                  "_parent": {
+                    "$ref": "Dependency_Service_Booking_View"
+                  },
+                  "model": {
+                    "$ref": "Dependency_Service_Booking"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 350,
+                  "top": 310,
+                  "width": 32,
+                  "height": 13,
+                  "text": "«uses»"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 1,
+              "points": "390:299;370:515",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Dependency_Service_Booking_Label"
+              },
+              "tail": {
+                "$ref": "BookingService_View"
+              },
+              "head": {
+                "$ref": "Booking_View"
+              }
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "Dependency_Service_Room_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Dependency_Service_Room"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Dependency_Service_Room_Label",
+                  "_parent": {
+                    "$ref": "Dependency_Service_Room_View"
+                  },
+                  "model": {
+                    "$ref": "Dependency_Service_Room"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 380,
+                  "top": 310,
+                  "width": 32,
+                  "height": 13,
+                  "text": "«uses»"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 1,
+              "points": "400:299;370:345",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Dependency_Service_Room_Label"
+              },
+              "tail": {
+                "$ref": "BookingService_View"
+              },
+              "head": {
+                "$ref": "Room_View"
+              }
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "Dependency_Service_RoomType_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Dependency_Service_RoomType"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Dependency_Service_RoomType_Label",
+                  "_parent": {
+                    "$ref": "Dependency_Service_RoomType_View"
+                  },
+                  "model": {
+                    "$ref": "Dependency_Service_RoomType"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 520,
+                  "top": 310,
+                  "width": 32,
+                  "height": 13,
+                  "text": "«uses»"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 1,
+              "points": "500:260;600:345",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Dependency_Service_RoomType_Label"
+              },
+              "tail": {
+                "$ref": "BookingService_View"
+              },
+              "head": {
+                "$ref": "RoomType_View"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "Association_Booking_Room_View",
+              "_parent": {
+                "$ref": "AAAAAAGP+qBtyKM79qY="
+              },
+              "model": {
+                "$ref": "Association_Booking_Room"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Association_Booking_Room_Label",
+                  "_parent": {
+                    "$ref": "Association_Booking_Room_View"
+                  },
+                  "model": {
+                    "$ref": "Association_Booking_Room"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 350,
+                  "top": 470,
+                  "width": 42,
+                  "height": 13,
+                  "text": "includes"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Association_Booking_Room_End1",
+                  "_parent": {
+                    "$ref": "Association_Booking_Room_View"
+                  },
+                  "model": {
+                    "$ref": "Association_Booking_Room_end1"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 345,
+                  "top": 495,
+                  "width": 21,
+                  "height": 13,
+                  "text": "1..*"
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "Association_Booking_Room_End2",
+                  "_parent": {
+                    "$ref": "Association_Booking_Room_View"
+                  },
+                  "model": {
+                    "$ref": "Association_Booking_Room_end2"
+                  },
+                  "visible": true,
+                  "font": "Arial;13;0",
+                  "left": 345,
+                  "top": 450,
+                  "width": 21,
+                  "height": 13,
+                  "text": "1..*"
+                }
+              ],
+              "visible": true,
+              "font": "Arial;13;0",
+              "lineStyle": 0,
+              "points": "360:515;360:459",
+              "showVisibility": true,
+              "nameLabel": {
+                "$ref": "Association_Booking_Room_Label"
+              },
+              "tailEndLabel": {
+                "$ref": "Association_Booking_Room_End1"
+              },
+              "headEndLabel": {
+                "$ref": "Association_Booking_Room_End2"
+              },
+              "tail": {
+                "$ref": "Booking_View"
+              },
+              "head": {
+                "$ref": "Room_View"
+              },
+              "end1": {
+                "$ref": "Association_Booking_Room_end1"
+              },
+              "end2": {
+                "$ref": "Association_Booking_Room_end2"
+              }
             }
           ]
         },
@@ -2554,6 +2772,14 @@
                 "$ref": "BookingService_ID"
               },
               "name": "calculateTotal"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "BookingService_applyDiscount",
+              "_parent": {
+                "$ref": "BookingService_ID"
+              },
+              "name": "applyDiscount"
             }
           ]
         },
@@ -2580,6 +2806,30 @@
                 "$ref": "IBookingRepository_ID"
               },
               "name": "findById"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingRepository_delete",
+              "_parent": {
+                "$ref": "IBookingRepository_ID"
+              },
+              "name": "delete"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingRepository_findByGuestId",
+              "_parent": {
+                "$ref": "IBookingRepository_ID"
+              },
+              "name": "findByGuestId"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "IBookingRepository_findByRoomId",
+              "_parent": {
+                "$ref": "IBookingRepository_ID"
+              },
+              "name": "findByRoomId"
             }
           ]
         },
@@ -2621,6 +2871,36 @@
               "name": "address",
               "visibility": "private",
               "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Hotel_phone",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "phone",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Hotel_starRating",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "starRating",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Hotel_isActive",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "isActive",
+              "visibility": "private",
+              "type": "boolean"
             }
           ],
           "operations": [
@@ -2631,6 +2911,22 @@
                 "$ref": "Hotel_ID"
               },
               "name": "addRoom"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Hotel_removeRoom",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "removeRoom"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Hotel_getActiveRooms",
+              "_parent": {
+                "$ref": "Hotel_ID"
+              },
+              "name": "getActiveRooms"
             }
           ]
         },
@@ -2665,6 +2961,16 @@
             },
             {
               "_type": "UMLAttribute",
+              "_id": "Room_floor",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "floor",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
               "_id": "Room_pricePerNight",
               "_parent": {
                 "$ref": "Room_ID"
@@ -2672,6 +2978,26 @@
               "name": "pricePerNight",
               "visibility": "private",
               "type": "decimal"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Room_isAvailable",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "isAvailable",
+              "visibility": "private",
+              "type": "boolean"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Room_maxOccupancy",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "maxOccupancy",
+              "visibility": "private",
+              "type": "int"
             }
           ],
           "operations": [
@@ -2682,6 +3008,22 @@
                 "$ref": "Room_ID"
               },
               "name": "checkStatus"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Room_updateAvailability",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "updateAvailability"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Room_getPrice",
+              "_parent": {
+                "$ref": "Room_ID"
+              },
+              "name": "getPrice"
             }
           ]
         },
@@ -2716,6 +3058,26 @@
             },
             {
               "_type": "UMLAttribute",
+              "_id": "RoomType_description",
+              "_parent": {
+                "$ref": "RoomType_ID"
+              },
+              "name": "description",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "RoomType_capacity",
+              "_parent": {
+                "$ref": "RoomType_ID"
+              },
+              "name": "capacity",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
               "_id": "RoomType_basePrice",
               "_parent": {
                 "$ref": "RoomType_ID"
@@ -2723,6 +3085,24 @@
               "name": "basePrice",
               "visibility": "private",
               "type": "decimal"
+            }
+          ],
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "RoomType_getDescription",
+              "_parent": {
+                "$ref": "RoomType_ID"
+              },
+              "name": "getDescription"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "RoomType_updatePrice",
+              "_parent": {
+                "$ref": "RoomType_ID"
+              },
+              "name": "updatePrice"
             }
           ]
         },
@@ -2764,6 +3144,36 @@
               "name": "email",
               "visibility": "private",
               "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Guest_phone",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "phone",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Guest_membershipLevel",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "membershipLevel",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Guest_isDeleted",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "isDeleted",
+              "visibility": "private",
+              "type": "boolean"
             }
           ],
           "operations": [
@@ -2774,6 +3184,22 @@
                 "$ref": "Guest_ID"
               },
               "name": "updateProfile"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Guest_getBookingHistory",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "getBookingHistory"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Guest_getMembershipDiscount",
+              "_parent": {
+                "$ref": "Guest_ID"
+              },
+              "name": "getMembershipDiscount"
             }
           ]
         },
@@ -2798,11 +3224,31 @@
             },
             {
               "_type": "UMLAttribute",
+              "_id": "Booking_guestId",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "guestId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
               "_id": "Booking_checkInDate",
               "_parent": {
                 "$ref": "Booking_ID"
               },
               "name": "checkInDate",
+              "visibility": "private",
+              "type": "DateTime"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Booking_checkOutDate",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "checkOutDate",
               "visibility": "private",
               "type": "DateTime"
             },
@@ -2815,6 +3261,36 @@
               "name": "totalAmount",
               "visibility": "private",
               "type": "decimal"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Booking_status",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "status",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Booking_numberOfGuests",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "numberOfGuests",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Booking_createdAt",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "createdAt",
+              "visibility": "private",
+              "type": "DateTime"
             }
           ],
           "operations": [
@@ -2825,6 +3301,22 @@
                 "$ref": "Booking_ID"
               },
               "name": "calculateDuration"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Booking_updateStatus",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "updateStatus"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Booking_getTotalAmount",
+              "_parent": {
+                "$ref": "Booking_ID"
+              },
+              "name": "getTotalAmount"
             }
           ]
         },
@@ -2849,6 +3341,36 @@
             },
             {
               "_type": "UMLAttribute",
+              "_id": "Invoice_bookingId",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "bookingId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Invoice_invoiceNumber",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "invoiceNumber",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Invoice_issueDate",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "issueDate",
+              "visibility": "private",
+              "type": "DateTime"
+            },
+            {
+              "_type": "UMLAttribute",
               "_id": "Invoice_totalAmount",
               "_parent": {
                 "$ref": "Invoice_ID"
@@ -2856,6 +3378,26 @@
               "name": "totalAmount",
               "visibility": "private",
               "type": "decimal"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Invoice_taxAmount",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "taxAmount",
+              "visibility": "private",
+              "type": "decimal"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Invoice_isPaid",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "isPaid",
+              "visibility": "private",
+              "type": "boolean"
             }
           ],
           "operations": [
@@ -2866,6 +3408,22 @@
                 "$ref": "Invoice_ID"
               },
               "name": "generatePDF"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Invoice_sendEmail",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "sendEmail"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Invoice_markAsPaid",
+              "_parent": {
+                "$ref": "Invoice_ID"
+              },
+              "name": "markAsPaid"
             }
           ]
         },
@@ -2890,6 +3448,16 @@
             },
             {
               "_type": "UMLAttribute",
+              "_id": "Payment_bookingId",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "bookingId",
+              "visibility": "private",
+              "type": "int"
+            },
+            {
+              "_type": "UMLAttribute",
               "_id": "Payment_amount",
               "_parent": {
                 "$ref": "Payment_ID"
@@ -2897,6 +3465,46 @@
               "name": "amount",
               "visibility": "private",
               "type": "decimal"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Payment_paymentDate",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "paymentDate",
+              "visibility": "private",
+              "type": "DateTime"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Payment_paymentMethod",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "paymentMethod",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Payment_transactionId",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "transactionId",
+              "visibility": "private",
+              "type": "string"
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "Payment_status",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "status",
+              "visibility": "private",
+              "type": "string"
             }
           ],
           "operations": [
@@ -2907,6 +3515,22 @@
                 "$ref": "Payment_ID"
               },
               "name": "processPayment"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Payment_refund",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "refund"
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "Payment_getReceipt",
+              "_parent": {
+                "$ref": "Payment_ID"
+              },
+              "name": "getReceipt"
             }
           ]
         },
@@ -2949,6 +3573,48 @@
           },
           "target": {
             "$ref": "IBookingRepository_ID"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "Dependency_Service_Booking",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "BookingService_ID"
+          },
+          "target": {
+            "$ref": "Booking_ID"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "Dependency_Service_Room",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "BookingService_ID"
+          },
+          "target": {
+            "$ref": "Room_ID"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "Dependency_Service_RoomType",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "uses",
+          "source": {
+            "$ref": "BookingService_ID"
+          },
+          "target": {
+            "$ref": "RoomType_ID"
           }
         },
         {
@@ -3107,6 +3773,37 @@
               "$ref": "Payment_ID"
             },
             "multiplicity": "0..*",
+            "navigable": "navigable"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "Association_Booking_Room",
+          "_parent": {
+            "$ref": "AAAAAAGP+qBWK6M3Z8Y="
+          },
+          "name": "includes",
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Association_Booking_Room_end1",
+            "_parent": {
+              "$ref": "Association_Booking_Room"
+            },
+            "reference": {
+              "$ref": "Booking_ID"
+            },
+            "multiplicity": "1..*"
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "Association_Booking_Room_end2",
+            "_parent": {
+              "$ref": "Association_Booking_Room"
+            },
+            "reference": {
+              "$ref": "Room_ID"
+            },
+            "multiplicity": "1..*",
             "navigable": "navigable"
           }
         }
